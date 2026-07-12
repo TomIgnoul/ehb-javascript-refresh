@@ -3,7 +3,7 @@ import { stdin as input, stdout as output } from "node:process";
 
 const userInput = readline.createInterface({ input, output });
 const resultaatFoutantwoord ="fout het antwoord is: ";
-const restulaatGoedantwoord ="Goed antwoord!";
+const resultaatGoedAntwoord ="Goed antwoord!";
 let juisteAntwoorden= ["parijs", "8", "blauwe vinvis", "shakespeare", "8"]
 let vragen = [
   "Wat is de hoofdstad van Frankrijk? ",
@@ -20,7 +20,7 @@ let teller = 0;
     antwoord = antwoord.toLowerCase().toString();
     if (antwoord == juisteAntwoorden[i]){
       teller ++;
-      console.log(restulaatGoedantwoord);
+      console.log(resultaatGoedAntwoord);
     }else{
       console.log(`${resultaatFoutantwoord} ${juisteAntwoorden[i]}`)
     }
